@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtmll/DTD/xhtmll-transitional.dtd">
+					  <html xmlns="http://www.w3.org/1999/xhtml">
+<body bgcolor="white">
+<p><pre><b>                                     Leave Application Form</pre></b></p>
+<form action="ass1.html">
+<table align="center" bgcolor="#b3ffff">
+<tr>
+<td>Leave Type:</td>
+<td>
+<select name="thelist">
+<option>CCL</option>
+<option>EL</option>
+<option>ML</option>
+<option>HPL</option>
+<option>OD</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Applied date:</td>
+<td><p><span id="datetime"></span></p>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+var time = today.getHours() + ":" + today.getMinutes();
+var datetime=time;
+</script></td>
+</tr>
+<tr>
+<td>Leave dates:</td>
+</tr>
+<tr>
+<td>From:</td>
+<td><input type="text" /></td>
+</tr>
+<tr>
+<td>To:</td>
+<td><input type="text" />
+</tr>
+<tr>
+<td>No.of days:</td>
+<td><input type="text" />
+</tr>
+<tr>
+<td>Purpose:</td>
+<td><input type="text" />
+</tr>
+<tr>
+<td>Alternate arrangement:</td>
+<td><br /><input type="radio" name="option" value="yes"/>Yes<br /><input type="radio" name="option" value="no"/>No</td>
+</tr>
+<tr>
+<td><input type="submit" value="click submit" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

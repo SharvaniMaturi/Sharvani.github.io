@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+                      "http://www.w3.org/TR/xhtmll/DTD/xhtmll-frameset.dtd">
+					  <html xmlns="http://www.w3.org/1999/xhtml">
+					  <style type="text/css">
+					  #header{
+					  background-color:#80ffcc;
+					  position:absolute;
+					  top:0px;
+					  left:0px;
+					  width:800px;
+					  height:140px;
+					  }
+					  #left{
+					  background-color:#99ddff;
+					  position:absolute;
+					  top:140px;
+					  left:0px;
+					  width:150px;
+					  height:500px;
+					  }
+					  #content{
+					  background-color:white;
+					  position:absolute;
+					  top:140px;
+					  left:150px;
+					  width:500px;
+					  height:500px;
+					  }
+					  #right{
+					  background-color:#99ddff;
+					  position:absolute;
+					  top:140px;
+					  left:650px;
+					  width:150px;
+					  height:500px;
+					  }
+					  #footer{
+					  background-color:#80ffcc;
+					  position:absolute;
+					  top:540px;
+					  left:0px;
+					  width:800px;
+					  height:100px;
+					  }
+					  </style>
+					  <body>
+					   <div id="header">
+					   <h1 style="text-align:center;color:red;">Chaitanya Bharathi Institute of Technology</h1>
+					   <h2 style="text-align:center;color:blue">STAFF LEAVE APPLICATION FORM</h2></div>
+					   <div id="left"></div>
+					   <div id="content"><br /><br /><p><pre><b>      Leave Application Form</b></pre></p>
+<form action="new1.html">
+<table align="center">
+<tr>
+<td>Leave Type:</td>
+<td>
+<select name="thelist">
+<option>CCL</option>
+<option>EL</option>
+<option>ML</option>
+<option>HPL</option>
+<option>OD</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Applied date:</td>
+<td><p><span id="datetime"></span></p>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+var time = today.getHours() + ":" + today.getMinutes();
+var datetime=time;
+</script></td>
+</tr>
+<tr>
+<td>Leave dates:</td>
+</tr>
+<tr>
+<td>From:</td>
+<td><input type="text" /></td>
+</tr>
+<tr>
+<td>To:</td>
+<td><input type="text" />
+</tr>
+<tr>
+<td>No.of days:</td>
+<td><input type="text" />
+</tr>
+<tr>
+<td>Purpose:</td>
+<td><input type="text" />
+</tr>
+<tr>
+<td>Alternate arrangement:</td>
+<td><br /><input type="radio" name="option" value="yes"/>Yes<br /><input type="radio" name="option" value="no"/>No</td>
+</tr>
+<tr>
+<td><input type="submit" value="Click submit" /></td>
+</tr>
+</table>
+</form></div>
+					   <div id="right"></div>
+					  <div id="footer"></div>
+					  </body>
+					  </html>
